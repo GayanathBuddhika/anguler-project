@@ -30,7 +30,7 @@ export class ServerComponent implements OnInit {
     return this.frind;
   }
   getColler() {
-    return this.frind === 'good frind' ? 'green' : 'blue';
+    return this.frind === 'good frind' ? 'green' : 'red';
   }
 
 
