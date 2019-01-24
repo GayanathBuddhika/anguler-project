@@ -4,14 +4,26 @@ import {FormsModule} from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ServerComponent } from './server/server.component';
-import { SeveComponent } from './seve/seve.component';
+
+import { HederComponent } from './heder/heder.component';
+import { RecipesComponent } from './recipes/recipes.component';
+import { RecipesListComponent } from './recipes/recipes-list/recipes-list.component';
+import { RecipesDetailComponent } from './recipes/recipes-detail/recipes-detail.component';
+import { RecipesItemComponent } from './recipes/recipes-list/recipes-item/recipes-item.component';
+import { ShopingListComponent } from './shoping-list/shoping-list.component';
+import { ShopingEditComponent } from './shoping-list/shoping-edit/shoping-edit.component';
 
 @NgModule({
    declarations: [
       AppComponent,
-      ServerComponent,
-      SeveComponent
+     
+      HederComponent,
+      RecipesComponent,
+      RecipesListComponent,
+      RecipesDetailComponent,
+      RecipesItemComponent,
+      ShopingListComponent,
+      ShopingEditComponent
    ],
    imports: [
       BrowserModule,
