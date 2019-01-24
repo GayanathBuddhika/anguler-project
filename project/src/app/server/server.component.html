@@ -1,0 +1,19 @@
+<p>
+  server works!
+</p>
+
+
+<button type="button" class="btn btn-primary" [disabled]="buttonStatus=='gaya'" (click)="click()">button</button>
+<p>{{status}}</p>
+
+<input type="text" [(ngModel)]="dog" id="dog" name="dog">
+
+<p *ngIf="dogstatus; else onsubmit">{{dog}}</p>
+<ng-template #onsubmit>
+  <p>no submit</p>
+</ng-template>
+
+<p [ngStyle]="{backgroundColor:getColler()}">my have {{getFrind()}}</p>
+
+
+<div *ngFor="let baby of babys">{{baby}}</div>
