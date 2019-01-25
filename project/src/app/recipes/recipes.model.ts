@@ -1,4 +1,4 @@
-export class Recipes {
+export class Recipe {
     public name: string;
     public description: string;
     public imagePath: string;
@@ -7,5 +7,5 @@ export class Recipes {
         this.description = dec;
         this.imagePath = img;
     }
-
+ 
 }
