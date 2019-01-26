@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-heder',
@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HederComponent implements OnInit {
 
+  @Output('featureSelected') featureSelected = new EventEmitter();
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onClick(feature) {
+    this.featureSelected.emit(feature);
+
+
   }
 
 }
