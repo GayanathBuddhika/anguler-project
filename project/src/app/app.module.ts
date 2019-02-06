@@ -1,3 +1,4 @@
+import { ShopingListService } from './shoping-list/shoping_list.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -12,6 +13,7 @@ import { RecipesDetailComponent } from './recipes/recipes-detail/recipes-detail.
 import { RecipesItemComponent } from './recipes/recipes-list/recipes-item/recipes-item.component';
 import { ShopingListComponent } from './shoping-list/shoping-list.component';
 import { ShopingEditComponent } from './shoping-list/shoping-edit/shoping-edit.component';
+import { DropDownDirective } from './shaird/drop-down.directive';
 
 @NgModule({
    declarations: [
@@ -22,14 +24,15 @@ import { ShopingEditComponent } from './shoping-list/shoping-edit/shoping-edit.c
       RecipesDetailComponent,
       RecipesItemComponent,
       ShopingListComponent,
-      ShopingEditComponent
+      ShopingEditComponent,
+      DropDownDirective
    ],
    imports: [
       BrowserModule,
       AppRoutingModule,
       FormsModule
    ],
-   providers: [],
+   providers: [ShopingListService],
    bootstrap: [
       AppComponent
    ]
